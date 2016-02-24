@@ -21,19 +21,7 @@ app.get("/dashboard", function(){
   res.sendFile(process.cwd() + "/views/dashboard.html");
 
 });
-github.user.getFollowingFromUser({
-    user: "thenriuqez"
-}, function(err, res) {
-    console.log(JSON.stringify(res));
-});
-app.get('github/:user'), function(req , res){
-    var user = req.params.user;
-    github.user.getFollowingFromUser({
-        user: "thenriuqez"
-    }, function(err, res) {
-        console.log(JSON.stringify(res));
-    });
-  }
+  
 
 
 app.listen(PORT, function(){
