@@ -1,0 +1,11 @@
+{
+  "name": "portfilo",
+  "version": "1.0.0",
+  "description": "the first step creation of my portfilo page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Terrence Henriquez",
+  "license": "ISC"
+}
