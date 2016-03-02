@@ -9,6 +9,7 @@ var github = new GitHubApi({
 
 app.use ("/js", express.static("public/js"));
 app.use("/css", express.static("public/css"));
+app.use ("/img", express.static("public/img"));
 
 app.get("/" , function(req, res){
     res.sendFile(process.cwd() + "/views/index.html");
@@ -18,10 +19,10 @@ app.get("/register" , function(req, res){
 });
 
 app.get("/dashboard", function(){
-  res.sendFile(process.cwd() + "/views/dashboard.html");
+  res.sendFile(process.cwd() + "/views/images/Codingboard.jpg");
 
 });
-  
+
 
 
 app.listen(PORT, function(){
